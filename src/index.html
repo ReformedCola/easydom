@@ -6,9 +6,41 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Easy DOM</title>
+  <style>
+    #test {
+      border: 1px solid red;
+    }
+  </style>
 </head>
 <body>
-  hello world
+  <div id="test">
+    <button onclick="addBefore()">
+      Insert Old Div before this red box
+    </button>
+    <button onclick="removeOldDiv()">
+      Delete Old Div
+    </button>
+    <button onclick="addAfter()">
+      Insert New Div after this red box
+    </button>
+    <button onclick="removeNewDiv()">
+      Delete New Div
+    </button>
+    <hr/>
+    <button onclick="addChild()">
+      Add child node
+    </button>
+    <button onclick="addParent()">
+      Add parent node for the child node
+    </button>
+    <button onclick="remove()">
+      Delete child node
+    </button>
+    <button onclick="removeParent()">
+      Delete parent node
+    </button>
+  </div>
+  <script src="dom.js"></script>
   <script src="main.js"></script>
 </body>
 </html>
