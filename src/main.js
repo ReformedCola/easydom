@@ -85,3 +85,5 @@ changeBackground = () => {
   dom.each(dom.children(thanosChildren), (n) => dom.style(n, 'background', 'red'))
 }
 
+const rank = dom.index(text)
+console.log(rank)
