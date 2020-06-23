@@ -10,6 +10,44 @@
     #test {
       border: 1px solid red;
     }
+    #thanos {
+      margin-top: 16px;
+    }
+    #thanos > div {
+      background: blue;
+      color: white;
+    }
+    #textWrapper {
+      border: 1px solid green;
+      margin-top: 16px;
+      margin-right: 16px;
+      display: inline-block;
+      text-align: center;
+    }
+    #changeHtmlWrapper {
+      border: 1px solid purple;
+      margin-top: 16px;
+      margin-right: 16px;
+      display: inline-block;
+      text-align: center;
+    }
+    #changeStyleWrapper {
+      border: 1px solid orange;
+      margin-top: 16px;
+      margin-right: 16px;
+      display: inline-block;
+      text-align: center;
+    }
+    .red {
+      background: red;
+    }
+    #addClassWrapper {
+      border: 1px solid black;
+      margin-top: 16px;
+      margin-right: 16px;
+      display: inline-block;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
@@ -39,6 +77,45 @@
     <button onclick="removeParent()">
       Delete parent node
     </button>
+  </div>
+  <div id="thanos">
+    <div>Remove me</div>
+    <div>Remove me</div>
+    <div>Remove me</div>
+    <div>Remove me</div>
+    <div>Remove me</div>
+    <div>Remove me</div>
+    <button onclick="removeAll()">
+      Thanos Snap
+    </button>
+    <button onclick="changeBackground()">
+      Change Thanos' children's background
+    </button>
+  </div>
+  <div id="textWrapper">
+    <div id="text" class="blue">
+      Change me?
+    </div>
+    <button onclick="changeText()" id="blueSibling">Change Text</button>
+  </div>
+  <div id="changeHtmlWrapper">
+    <div id="changeDiv">
+      I am a div
+    </div>
+    <button onclick="changeHtml()">Change HTML</button>
+  </div>
+  <div id="changeStyleWrapper">
+    <div id="changeCSS">
+      Change me to orange background and white text color
+    </div>
+    <button onclick="changeStyle()">Change Style</button>
+  </div>
+  <div id="addClassWrapper">
+    <div id="addClass">
+      Add a class 'red' on me
+    </div>
+    <button onClick="addClassList()">Add Class</button>
+    <button onclick="removeClassList()">Remove Class</button>
   </div>
   <script src="dom.js"></script>
   <script src="main.js"></script>
